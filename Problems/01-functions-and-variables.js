@@ -71,7 +71,11 @@ console.log(greeting("Ms. Atwood"));
 function returnArray (first, second, third) {
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
+  let myArr = [first, second, third];
+  return myArr;
 }
+let a = returnArray ("Tim", "Horton", "Donuts");
+a 
 
 
 // Problem 4
