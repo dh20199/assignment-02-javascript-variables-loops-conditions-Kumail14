@@ -26,7 +26,14 @@ function returnObject (first, last, prof) {
   // o.firstName = first
   // etc.
   // don't forget to return the object
+  var o = {};
+  o.firstName = first;
+  o.lastName = last;
+  o.profession = prof;
+
+  return o;
 }
+console.log(returnObject('Elijah', 'Harper', 'Canadian politican')); 
 
 
 
