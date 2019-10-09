@@ -96,8 +96,15 @@ function splitArray (thisArray) {
   // array[0]
   // array[1]
   // etc.
+  let first = 'Tim'; 
+  let second = 'Horton';
+  let third = 'Donut.';
+  thisArray = [first, second, third];
+  return thisArray[0] + ' ' + thisArray[1] + '' + ' was a ' + '' +thisArray[2];
+
 
 }
+
 
 // Problem 5
 // A. Write a simple function that takes two arguments.  Subtact the second number from the first.
