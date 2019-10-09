@@ -131,8 +131,14 @@ function carefulSubtract (first, second) {
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
+  if (typeof first === 'number' && typeof second === 'number'){
+    return first - second;
+  } else
+    return 'I can only subtract numbers.';
+
 
 }
+console.log(carefulSubtract(36,10));
 
 
 
@@ -149,8 +155,24 @@ function carefulSubtract (first, second) {
  */
 function typeTester (unknown) {
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
-  // return a value. 
+  // return a value.
+  if (typeof unknown === 'string') {
+    return unknown + ' yay!';
+  }
+  else if (typeof unknown === 'number')
+  {
+    return unknown*unknown;
+  }
+  else if (typeof unknown === 'object')
+  {
+    return 'I don\'t know how to use that kind of variable.';
+  }
+  else
+  {
+    return 'Sorry, I can\'t do anything with an undefined value.';
+  }
 }
+console.log(typeTester(99));
 
 
 
