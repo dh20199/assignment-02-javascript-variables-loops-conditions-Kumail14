@@ -117,7 +117,10 @@ function splitArray (thisArray) {
  */
 function subtract(number1, number2) {
   // subtract number2 from number1, and return the result.
+  return number1 - number2;
+
 }
+console.log(subtract(51,10));
 
 
 //B. Write a slightly more complex number that only performs the subtraction after testing to be
