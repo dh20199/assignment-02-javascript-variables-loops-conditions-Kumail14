@@ -53,10 +53,10 @@ function greeting(name) {
   // say goodbye, I might write
   // let parting = "Goodbye, " + name + ".";
   // (but of course, I actually want to say hello.)
-  let output = "Hello, " + name + "!"; 
+  let output = 'Hello, ' + name + '!'; 
   return output; 
 }
-console.log(greeting("Ms. Atwood"));
+console.log(greeting('Ms. Atwood'));
 
 // Problem 3
 // write a function that takes three parameters and returns an array
@@ -74,8 +74,8 @@ function returnArray (first, second, third) {
   let myArr = [first, second, third];
   return myArr;
 }
-let a = returnArray ("Tim", "Horton", "Donuts");
-a 
+let a = returnArray ('Tim', 'Horton', 'Donuts');
+a; 
 
 
 // Problem 4
