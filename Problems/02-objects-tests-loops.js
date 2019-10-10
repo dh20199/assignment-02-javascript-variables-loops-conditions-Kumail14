@@ -156,7 +156,11 @@ console.log(wasWriter({firstName: 'Anne', lastName: 'Carson', profession: 'poet'
 function stringIterator (aString, aNumber) {
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
+  for ( var i = 0; i< aNumber; i++){
+    console.log(aString);
+  }
 }
+stringIterator('My eyes hurt!', 4);
 
 
 // Problem 5
