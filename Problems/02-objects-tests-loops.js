@@ -185,8 +185,13 @@ console.log(stringIterator('My eyes hurt!', 4));
  * @returns   {string}
  */
 function prettyIterator (aString, aNumber) {
-  // be sure to check your results on this one; it has a trick. maybe 2. 
+  // be sure to check your results on this one; it has a trick. maybe 2.
+  for (let i = 0; i < aNumber; i++) {
+    let theString = aString + '(' + (i) + ')' + '\n';
+    return theString.repeat(aNumber);
+  }
 }
+console.log(prettyIterator('Study harder!',3));
 
 
 
@@ -234,7 +239,16 @@ function computeReign (pm) {
   // attributes and variables. remember that you may need to
   // "escape" the ' with \'
   // finally, makre sure you return the sentence as the value of the function
+  pm = {fullName: pm.fullName,
+    party: pm.party,
+    from: pm.from,
+    to: pm.to};
+  let sentence = (pm.to - pm.from);
+  {return pm.fullName + '\'' + 's reign was ' + sentence + ' years long.';}
+
+
 }
+console.log(computeReign({fullName: 'Louis Riel', party: 'Métis National Committee', from: 1869, to: 1870}));
 
 
 
