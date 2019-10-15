@@ -302,7 +302,16 @@ function sentences(list) {
   // is to use the "for...of" loop syntax to loop through the array,
   // and the object[attribute] or object.attribute reference format to access
   // the internal components of the objects.
+  let durReign;
+  let output = '';
+
+  for (let i of list)
+  {durReign = i.to - i.from;
+    output = output + i.fullName + '\'s reign was ' + durReign + ' years long.' + '\n';}
+  return output;
+
 }
+console.log(sentences([{}]));
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
