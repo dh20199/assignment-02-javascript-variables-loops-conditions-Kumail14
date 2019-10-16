@@ -186,10 +186,10 @@ console.log(stringIterator('My eyes hurt!', 4));
  */
 function prettyIterator (aString, aNumber) {
   // be sure to check your results on this one; it has a trick. maybe 2.
-  result = '';
+  let output = '';
   for (let i = 1; i <= aNumber; i++)
-  {result = result + aString + '(' + i + ')' + '\n';}
-  return result;
+  {output = output + aString + '(' + i + ')' + '\n';}
+  return output;
 }
 console.log(prettyIterator('Study Harder!', 3));
 
